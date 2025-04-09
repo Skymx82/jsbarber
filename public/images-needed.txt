@@ -1,0 +1,31 @@
+Images nécessaires pour le site JS Barber:
+
+1. Images principales:
+   - /images/hero-background.jpg - Image d'arrière-plan pour la section d'accueil (grande image de salon de coiffure)
+   - /images/booking-image.jpg - Image pour la section de réservation
+
+2. Images pour la section À propos:
+   - /images/about-1.jpg - Intérieur du salon JS Barber
+   - /images/about-2.jpg - Équipement professionnel JS Barber
+   - /images/about-3.jpg - Barbier JS Barber en action
+   - /images/about-4.jpg - Détail du salon JS Barber
+
+3. Images pour la section Services:
+   - /images/service-classic-cut.jpg - Coupe Classique
+   - /images/service-trendy-cut.jpg - Coupe Tendance
+   - /images/service-fade.jpg - Dégradé & Fondu
+   - /images/service-beard-trim.jpg - Taille de Barbe
+   - /images/service-traditional-shave.jpg - Rasage Traditionnel
+   - /images/service-haircut-beard.jpg - Coupe & Barbe
+   - /images/service-complete.jpg - Forfait Complet
+   - /images/service-facial.jpg - Soin du Visage
+   - /images/service-coloring.jpg - Coloration
+
+4. Images pour la section Témoignages:
+   - /images/testimonials/avatar-1.jpg - Avatar pour Thomas D.
+   - /images/testimonials/avatar-2.jpg - Avatar pour Julien M.
+   - /images/testimonials/avatar-3.jpg - Avatar pour Alexandre B.
+   - /images/testimonials/avatar-4.jpg - Avatar pour Maxime L.
+   - /images/testimonials/avatar-5.jpg - Avatar pour Nicolas P.
+
+Note: Pour un démarrage rapide, vous pouvez utiliser des images de stock gratuites de sites comme Unsplash ou Pexels. Assurez-vous de choisir des images qui correspondent à l'ambiance masculine, épurée et à la mode que vous souhaitez pour votre salon de coiffure JS Barber.
