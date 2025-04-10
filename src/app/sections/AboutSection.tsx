@@ -157,7 +157,7 @@ export default function AboutSection() {
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 md:col-span-8 relative h-80 overflow-hidden rounded-xl group">
               <Image
-                src="/images/about-4.jpg"
+                src="/images/ambi.png"
                 alt="Ambiance du salon JS Barber"
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -173,7 +173,7 @@ export default function AboutSection() {
             
             <div className="col-span-6 md:col-span-4 relative h-80 overflow-hidden rounded-xl group">
               <Image
-                src="/images/about-2.jpg"
+                src="/images/equip.png"
                 alt="Équipement professionnel JS Barber"
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -189,7 +189,7 @@ export default function AboutSection() {
             
             <div className="col-span-6 md:col-span-4 relative h-80 overflow-hidden rounded-xl group">
               <Image
-                src="/images/about-3.jpg"
+                src="/images/act.png"
                 alt="Barbier JS Barber en action"
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -205,7 +205,7 @@ export default function AboutSection() {
             
             <div className="col-span-12 md:col-span-8 relative h-80 overflow-hidden rounded-xl group">
               <Image
-                src="/images/barber-experience.jpg"
+                src="/images/dete.png"
                 alt="L'expérience JS Barber"
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-110"

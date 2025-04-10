@@ -16,62 +16,62 @@ export default function GallerySection() {
   const galleryImages = [
     {
       id: 1,
-      src: "/images/gallery/coupe1.jpg",
+      src: "/images/colo.jpg",
       alt: "Dégradé classique",
-      category: "dégradé"
+      category: "moderne"
     },
     {
       id: 2,
-      src: "/images/gallery/coupe2.jpg",
+      src: "/images/coup.jpg",
       alt: "Coupe tendance",
       category: "moderne"
     },
     {
       id: 3,
-      src: "/images/gallery/coupe3.jpg",
+      src: "/images/barbe.jpg",
       alt: "Barbe sculptée",
-      category: "barbe"
+      category: "barbe",
     },
     {
       id: 4,
-      src: "/images/gallery/coupe4.jpg",
+      src: "/images/barber2.jpg",
       alt: "Coupe et barbe",
-      category: "combo"
+      category: "barbe"
     },
     {
       id: 5,
-      src: "/images/gallery/coupe5.jpg",
+      src: "/images/coupetend.jpg",
       alt: "Dégradé haut",
       category: "dégradé"
     },
     {
       id: 6,
-      src: "/images/gallery/coupe6.jpg",
+      src: "/images/coupefond.jpg",
       alt: "Style moderne",
-      category: "moderne"
+      category: "dégradé"
     },
     {
       id: 7,
-      src: "/images/gallery/coupe7.jpg",
+      src: "/images/shamp.jpg",
       alt: "Barbe taillée",
       category: "barbe"
     },
     {
       id: 8,
-      src: "/images/gallery/coupe8.jpg",
+      src: "/images/soin.jpg",
       alt: "Coupe classique",
       category: "classique"
     },
     {
       id: 9,
-      src: "/images/gallery/coupe9.jpg",
+      src: "/images/barbe3.jpg",
       alt: "Dégradé bas",
-      category: "dégradé"
+      category: "barbe"
     }
   ];
 
   // Catégories pour le filtrage
-  const categories = ["tous", "dégradé", "moderne", "barbe", "combo", "classique"];
+  const categories = ["tous", "dégradé", "moderne", "barbe", "classique"];
   const [activeCategory, setActiveCategory] = useState("tous");
 
   // Filtrer les images en fonction de la catégorie sélectionnée
@@ -161,7 +161,7 @@ export default function GallerySection() {
         {/* Instagram CTA */}
         <div className="mt-16 text-center">
           <a 
-            href="https://instagram.com/js_barber" 
+            href="https://www.instagram.com/js_barber31/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-bold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"

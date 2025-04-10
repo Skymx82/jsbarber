@@ -170,7 +170,7 @@ export default function Footer() {
         
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-8 mt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} JS Barber - Tous droits réservés</p>
+          <p>&copy; {new Date().getFullYear()} JS Barber - Tous droits réservés | <span className="text-black">Site développé par <a href="https://tolarys-toulouse.fr" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-gold-light transition-colors">Tolarys</a></span></p>
           <p className="mt-2">
             <Link href="/mentions-legales" className="text-gold hover:text-gold-light transition-colors">
               Mentions légales

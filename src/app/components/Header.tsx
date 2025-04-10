@@ -59,7 +59,7 @@ export default function Header() {
             { name: 'Services', href: '/#services' },
             { name: 'À propos', href: '/#about' },
             { name: 'Galerie', href: '/#gallery' },
-            { name: 'Contact', href: '/#contact' },
+            { name: 'Contact', href: '/contact' },
           ].map((item) => (
             <Link 
               key={item.name} 
@@ -112,7 +112,7 @@ export default function Header() {
               { name: 'Services', href: '/#services' },
               { name: 'À propos', href: '/#about' },
               { name: 'Galerie', href: '/#gallery' },
-              { name: 'Contact', href: '/#contact' },
+              { name: 'Contact', href: '/contact' },
             ].map((item) => (
               <Link 
                 key={item.name} 
