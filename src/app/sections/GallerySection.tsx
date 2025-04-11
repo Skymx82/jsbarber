@@ -54,7 +54,7 @@ export default function GallerySection() {
       id: 7,
       src: "/images/shamp.jpg",
       alt: "Barbe taillée",
-      category: "barbe"
+      category: "classique"
     },
     {
       id: 8,
