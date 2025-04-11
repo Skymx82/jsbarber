@@ -98,19 +98,19 @@ export default function ServicesSection() {
       
       <div className="container mx-auto relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">NOS <span className="text-gold">PRESTATIONS</span></h2>
-          <div className="w-24 h-1 bg-gold mx-auto"></div>
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">NOS <span className="text-gold">PRESTATIONS</span></h2>
+          <div className="w-20 md:w-24 h-1 bg-gold mx-auto"></div>
         </div>
         
-        {/* Category Tabs - Stylish and Visual */}
-        <div className="flex justify-center mb-16">
-          <div className="inline-flex bg-white/5 backdrop-blur-sm p-1 rounded-full">
+        {/* Category Tabs - Stylish and Visual - Responsive for mobile */}
+        <div className="flex justify-center mb-10 md:mb-16">
+          <div className="inline-flex flex-wrap justify-center bg-white/5 backdrop-blur-sm p-1 rounded-2xl md:rounded-full">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id as any)}
-                className={`px-6 py-3 rounded-full font-bold text-sm uppercase tracking-wider transition-all duration-300 ${activeCategory === category.id
+                className={`px-3 sm:px-4 md:px-6 py-2 md:py-3 m-1 rounded-full font-bold text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 ${activeCategory === category.id
                   ? 'bg-gold text-white shadow-lg transform scale-105'
                   : 'text-white/80 hover:text-white'}`}
               >
@@ -120,31 +120,32 @@ export default function ServicesSection() {
           </div>
         </div>
         
-        {/* Services Grid - Visual Cards with Hover Effects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Services Grid - Visual Cards with Hover Effects - Improved for mobile */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {filteredServices.map((service) => (
             <div 
               key={service.id} 
               className="group relative overflow-hidden rounded-xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-500 transform hover:scale-105 hover:shadow-xl"
             >
               {/* Service Image with Overlay */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-52 sm:h-56 md:h-64 overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.name}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                 
                 {/* Price Tag */}
-                <div className="absolute top-4 right-4 bg-gold text-white text-xl font-bold px-4 py-2 rounded-full shadow-lg">
+                <div className="absolute top-3 md:top-4 right-3 md:right-4 bg-gold text-white text-base md:text-xl font-bold px-3 md:px-4 py-1 md:py-2 rounded-full shadow-lg">
                   {service.price}
                 </div>
                 
                 {/* Duration Badge */}
-                <div className="absolute bottom-4 left-4 bg-black/60 text-white text-sm px-3 py-1 rounded-full flex items-center">
-                  <svg className="w-4 h-4 mr-1 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div className="absolute bottom-3 md:bottom-4 left-3 md:left-4 bg-black/60 text-white text-xs md:text-sm px-2 md:px-3 py-1 rounded-full flex items-center">
+                  <svg className="w-3 h-3 md:w-4 md:h-4 mr-1 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   {service.duration}
@@ -152,8 +153,8 @@ export default function ServicesSection() {
               </div>
               
               {/* Service Name - Simplified Content */}
-              <div className="p-5 text-center">
-                <h3 className="text-xl text-white font-bold mb-0 group-hover:text-gold transition-colors">
+              <div className="p-3 md:p-5 text-center">
+                <h3 className="text-lg md:text-xl text-white font-bold mb-0 group-hover:text-gold transition-colors">
                   {service.name}
                 </h3>
               </div>
@@ -161,11 +162,11 @@ export default function ServicesSection() {
           ))}
         </div>
         
-        {/* Call to Action - More Visual */}
-        <div className="mt-16 text-center">
+        {/* Call to Action - More Visual - Responsive for mobile */}
+        <div className="mt-10 md:mt-16 text-center">
           <a 
             href="/reservation" 
-            className="inline-block bg-gold hover:bg-goldLight text-white font-bold text-lg py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+            className="inline-block bg-gold hover:bg-goldLight text-white font-bold text-base md:text-lg py-3 md:py-4 px-8 md:px-10 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
           >
             RÉSERVER MAINTENANT
           </a>
